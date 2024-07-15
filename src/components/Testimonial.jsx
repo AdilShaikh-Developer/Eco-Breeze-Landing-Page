@@ -8,8 +8,8 @@ const Testimonial = ({ testimonial, clientName, clientImage, socialLinks }) => {
         <img src={clientImage} />
         <h5>{clientName}</h5>
         <div className="social-links-container">
-          {socialLinks.map((e) => (
-            <a href={e.link} target="_blank">
+          {socialLinks.map((e, index) => (
+            <a href={e.link} target="_blank" key={index}>
               {e.platform}
             </a>
           ))}

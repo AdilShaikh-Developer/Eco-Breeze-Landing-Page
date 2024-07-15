@@ -60,10 +60,6 @@ textarea {
   background-color: #ffffff;
   color: #333333;
   transition: border-color 0.3s, background-color 0.3s;
-
-  &:hover {
-    background-color: #f0f0f0;
-  }
 }
 
 header {
@@ -82,38 +78,66 @@ main {
 }
 
 .visual-image {
-  width: 40%;
+  max-width: 400px;
+  // width: 40%;
+  width: 100%;
 }
 
 footer {
   padding: 5rem 0;
   margin: auto;
-  width: 80%;
+  width: 90%;
 
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   h1 {
     font-size: 1.2rem;
+    padding-bottom: 2rem;
+    width: 100px;
   }
 
-  table {
-    width: 100%;
-    margin: 0 2rem;
+  // table {
+  //   width: 100%;
+  //   margin: 0 2rem;
 
-    thead {
-      font-size: 1rem;
-      font-weight: 700;
+  //   thead {
+  //     font-size: 1rem;
+  //     font-weight: 700;
 
-      td {
-        padding: 1px 0 5px;
+  //     td {
+  //       padding: 1px 0 5px;
+  //     }
+  //   }
+
+  //   tbody {
+  //     font-size: 1rem;
+  //     td {
+  //       padding: 2px;
+  //     }
+  //   }
+  // }
+
+  > div {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    > section {
+      max-width: 350px;
+
+      h6 {
+        font-size: 1.1rem;
       }
     }
 
-    tbody {
-      font-size: 1rem;
-      td {
-        padding: 2px;
+    ul {
+      list-style-type: square;
+      padding: 1rem 0;
+
+      li {
+        padding: 5px 0;
+        margin-left: 1.5rem;
       }
     }
   }
@@ -123,21 +147,16 @@ footer {
     flex-direction: column;
     gap: 1rem;
 
-    h6 {
-      font-size: 1.1rem;
-    }
-
     div {
       display: flex;
       align-items: center;
       justify-content: center;
-      // gap: 10px;
 
       height: 3rem;
       width: 15rem;
       background: #ffffff;
 
-      transition: border-color 0.3s, background-color 0.3s;
+      border: 1px solid grey;
       border-radius: 0 1rem 0 1rem;
 
       input {

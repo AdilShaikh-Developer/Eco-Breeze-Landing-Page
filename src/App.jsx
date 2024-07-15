@@ -170,7 +170,7 @@ const App = () => {
       </main>
       <footer>
         <h1>EcoBreeze</h1>
-        <table>
+        {/* <table>
           <thead>
             <tr>
               <td>Social Media Links</td>
@@ -214,7 +214,50 @@ const App = () => {
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
+        <div>
+          <section className="social-media-links">
+            <h6>Social Media Links</h6>
+            <ul>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </section>
+          <section className="contact-information">
+            <h6>Contact Information</h6>
+            <ul>
+              <li>
+                <a href="mailto:contact@ecobreeze.com">contact@ecobreeze.com</a>
+              </li>
+              <li>+ 1-800-123-4567</li>
+              <li>123 Green Way, Eco City, EC 45678</li>
+            </ul>
+          </section>
+          <section className="other-relevant-links">
+            <h6>Other Relevant Links</h6>
+            <ul>
+              <li>
+                <a href="#">Company Blog</a>
+              </li>
+              <li>
+                <a href="#">Company Support</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </section>
+        </div>
         <section className="newsletter-subcription">
           <h6>Subscribe</h6>
           <div>

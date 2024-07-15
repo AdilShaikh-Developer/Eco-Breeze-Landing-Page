@@ -6,6 +6,7 @@ const Product = ({ img, title, subtitle }) => {
       <img src={img} alt="product-image" />
       <h3>{title}</h3>
       <p>{subtitle}</p>
+      <button>Learn More</button>
     </div>
   );
 };
